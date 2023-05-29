@@ -8,24 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Hp\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\nathe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\Documents\\GitHub\\Shopping\\Billing\\Billing.Model\\Billing.Model.csproj",
+      "projectUniqueName": "C:\\Users\\nathe\\source\\repos\\Shopping\\Billing\\Billing.Model\\Billing.Model.csproj",
       "projectName": "Billing.Model",
-      "projectPath": "C:\\Users\\Hp\\Documents\\GitHub\\Shopping\\Billing\\Billing.Model\\Billing.Model.csproj",
-      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\Documents\\GitHub\\Shopping\\Billing\\Billing.Model\\obj\\",
+      "projectPath": "C:\\Users\\nathe\\source\\repos\\Shopping\\Billing\\Billing.Model\\Billing.Model.csproj",
+      "packagesPath": "C:\\Users\\nathe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nathe\\source\\repos\\Shopping\\Billing\\Billing.Model\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\nathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +28,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -24,5 +24,15 @@ namespace Billing
         {
             InitializeComponent();
         }
+
+        private void btn_signin_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_signup_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

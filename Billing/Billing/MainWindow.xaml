@@ -6,7 +6,36 @@
         xmlns:local="clr-namespace:Billing"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
 
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0"  Opacity="1" Background="#FF8209" >
+            <StackPanel Margin="100,90,0,100" Height="239" >
+               
+                <Button x:Name="btn_signin" Content="Sign in" Margin="100,70,0,0" Width="100" Height="40" 
+                    Click="btn_signin_Click" FontWeight="Light" FontSize="15" Background="LightGray">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="7,0,0,7"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="btn_signup" Content="Sign up" Margin="100,15,0,0" Width="100" Height="40" 
+                    Click="btn_signup_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="7,0,0,7"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="1"  Background="LightGray" >
+            <Frame x:Name="frmain"/>
+        </StackPanel>
     </Grid>
 </Window>
