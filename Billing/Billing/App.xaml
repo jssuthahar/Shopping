@@ -58,6 +58,21 @@
             <Setter Property="Foreground" Value="White"></Setter>
             <Setter Property="BorderThickness" Value="0"></Setter>
         </Style>
+        <Style x:Key="gridtext"  TargetType="TextBlock">
+            <Setter Property="TextBlock.FontSize" Value="12"></Setter>
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="FontWeight" Value="Medium"></Setter>
+            <Setter Property="FontFamily" Value="file:///d:/MyFonts/#Pericles LightSetter"></Setter>
+            <Setter Property="Foreground" Value="Gray"></Setter>
+        </Style>
+        <Style x:Key="gridname"  TargetType="TextBlock">
+            <Setter Property="TextBlock.FontSize" Value="14"></Setter>
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="FontWeight" Value="Medium"></Setter>
+            <Setter Property="FontFamily" Value="file:///d:/MyFonts/#Pericles LightSetter"></Setter>
+            <Setter Property="Foreground" Value="Black"></Setter>
+        </Style>
+
 
     </Application.Resources>
    

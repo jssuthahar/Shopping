@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Billing"
         mc:Ignorable="d"
-        Title="Cart" Height="550" Width="850" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="Cart" Height="600" Width="950" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Window.Resources>
         <!--<Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="14"></Setter>
@@ -22,11 +22,12 @@
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid Height="450" Width="500" Margin="0,50,0,0">
+        <Grid Height="550" Width="600" Margin="0,50,0,0" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
@@ -44,10 +45,10 @@
                 </Rectangle.Fill>
             </Rectangle>
             
-            <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" Style="{StaticResource datagrid}"  Width="450" Height="400" Grid.Row="2"  Margin="0,10,0,0" x:Name="datagrid" BorderThickness="0" >
+            <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" Style="{StaticResource datagrid}"  Width="600" Height="450" Grid.Row="2"  Margin="0,10,0,0" x:Name="datagrid" BorderThickness="0" >
                 <DataGrid.RowStyle>
                     <Style TargetType="DataGridRow">
-                        <Setter Property="Height" Value="30"></Setter>
+                        <Setter Property="Height" Value="70"></Setter>
                         <Setter Property="Margin" Value="0,20,0,0"></Setter>
                     </Style>
                 </DataGrid.RowStyle>
@@ -60,15 +61,21 @@
                         <Setter Property="Foreground" Value="Gray"></Setter>
                         <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
                     </Style>
-                   
                 </DataGrid.Resources>
                 <DataGrid.Columns   >
-                    <DataGridTemplateColumn Header="PRODUCT DETAILS" Width="4*"   >
-                        <DataGridTemplateColumn.CellTemplate  >
+                    <DataGridTemplateColumn Header="PRODUCT DETAILS" Width="6*"   >
+                        <DataGridTemplateColumn.CellTemplate   >
                              <DataTemplate >
-                                <StackPanel >
-                                    <Image Source="{Binding Image}"></Image>
-                                    <TextBlock Text="{Binding Name}" ></TextBlock>
+                                <StackPanel Orientation="Horizontal" >
+                                    <Rectangle Width="60" Height="60">
+                                        <Rectangle.Fill>
+                                            <ImageBrush ImageSource="{Binding image}" ></ImageBrush>
+                                        </Rectangle.Fill>
+                                    </Rectangle>
+                                    <StackPanel Margin="20,0,0,0">
+                                        <TextBlock Text="{Binding Des}" Style="{StaticResource gridtext}" ></TextBlock>
+                                        <TextBlock Text="{Binding Name}" Margin="5" Style="{StaticResource gridname}" ></TextBlock>
+                                    </StackPanel>
                                 </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
@@ -78,26 +85,37 @@
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal"   >
                                     <Button x:Name="btnsub" Content="-" Height="20" Width="15" Background="Transparent" BorderThickness="0"></Button>
-                                    <TextBox x:Name="txtQuantity" Height="20" Width="20" Margin="5,0,5,0" IsReadOnly="True"></TextBox>
+                                    <TextBox x:Name="txtQuantity" Text="{Binding Quantity}" Height="20" Width="20" VerticalContentAlignment="Bottom" Margin="5,0,5,0" IsReadOnly="True" Style="{StaticResource MiniheadBox}"></TextBox>
                                     <Button x:Name="btnadd" Content="+" Height="20" Width="15" Background="Transparent" BorderThickness="0"></Button>
                                 </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-                    <DataGridTemplateColumn Header="PRICE" Width="*"    >
+                    <DataGridTemplateColumn Header="PRICE" Width="2*"    >
                         <DataGridTemplateColumn.CellTemplate >
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal"   >
-                                    <TextBlock Text="" ></TextBlock>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center"   >
+                                    <TextBlock Text="{Binding price}" ></TextBlock>
                                 </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-                    <DataGridTemplateColumn Header="TOTAL" Width="*"   >
+                    <DataGridTemplateColumn Header="TOTAL" Width="2*"   >
                         <DataGridTemplateColumn.CellTemplate >
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal"   >
-                                    <TextBlock Text="" ></TextBlock>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center"   >
+                                    <TextBlock Text="{Binding total}" ></TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn  Width="*" >
+                        <DataGridTemplateColumn.CellTemplate >
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center"   >
+                                    <Button Background="Transparent" BorderThickness="0" >
+                                        <Image Source="/Images/delete.png" Width="20" Height="20"></Image>
+                                    </Button>
                                 </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
@@ -105,12 +123,18 @@
 
                 </DataGrid.Columns>
             </DataGrid>
+            <Button Grid.Row="3" Background="Transparent" BorderThickness="0" Margin="0,20,0,0" HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="\Images\left.png" Width="20" Height="20" ></Image>
+                    <TextBlock Text="CONTINUE SHOPPING" Margin="10,0,0,0" Style="{StaticResource Minihead}" VerticalAlignment="Center" Foreground="Orange" ></TextBlock>
+                </StackPanel>
+            </Button>
         </Grid>
         <Grid Grid.Column="1" >
             <Grid.Background>
                 <SolidColorBrush Color="#f5f5f6"></SolidColorBrush>
             </Grid.Background>
-            <Grid Height="450" Width="220" Margin="0,50,0,0">
+            <Grid Height="550" Width="220" Margin="0,50,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"></RowDefinition>
                     <RowDefinition Height="auto"></RowDefinition>
@@ -162,11 +186,6 @@
                 <Button x:Name="btncheckout" Content="Checkout" Grid.Row="8" Margin="0,30,0,0" Height="35" Style="{StaticResource btncheckout}"></Button>
             </Grid>
         </Grid>
-        <Button Grid.Row="1" Background="Transparent" BorderThickness="0" Margin="60,10,0,0" HorizontalAlignment="Left">
-            <StackPanel Orientation="Horizontal">
-                <!--<Image Source="Images/left.png" Width="20" Height="20"   ></Image>-->
-                <TextBlock Text="----CONTINUE SHOPPING" Margin="10,0,0,0" Style="{StaticResource Minihead}" Foreground="Orange" ></TextBlock>
-            </StackPanel>
-        </Button>
+      
     </Grid>
 </Window>

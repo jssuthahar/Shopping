@@ -19,14 +19,13 @@ namespace Billing
     /// </summary>
     public partial class Cart : Window
     {
+        
         public Cart()
         {
             InitializeComponent();
             
         }
 
-
-       
     }
    
 }
