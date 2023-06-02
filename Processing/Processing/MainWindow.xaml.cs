@@ -36,13 +36,7 @@ namespace Processing
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            List<OrderProcess> processs = new List<OrderProcess>()
-            {
-                new OrderProcess {Number=1,OrderID=1,Name="BAT",Unit=200,Quantaty=2,Total=500},
-                 new OrderProcess {Number=2,OrderID=2,Name="BALL",Unit=300,Quantaty=3,Total=600},
-                  new OrderProcess {Number=3,OrderID=3,Name="KIT",Unit=400,Quantaty=4,Total=700}
-            };
-            lstname.ItemsSource=processs;
+           
 
         }
     }
