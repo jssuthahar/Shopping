@@ -8,6 +8,8 @@
         public int Unit { get; set; }
         public int Quantaty { get; set; }
         public int Total { get;set; }
+        
+      
 
     }
 }

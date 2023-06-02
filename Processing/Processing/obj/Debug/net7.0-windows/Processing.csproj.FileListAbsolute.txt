@@ -22,3 +22,10 @@ C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processin
 C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\bin\Debug\net7.0-windows\Processing.Model.dll
 C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\bin\Debug\net7.0-windows\Processing.Model.pdb
 C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\obj\Debug\net7.0-windows\Processing.csproj.CopyComplete
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\bin\Debug\net7.0-windows\Processing.dll.config
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
