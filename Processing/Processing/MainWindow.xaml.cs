@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
 
 namespace Processing
 {
@@ -36,7 +37,20 @@ namespace Processing
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            OrderProcess order = (OrderProcess)lstname.SelectedItem;
            
+                //SqlConnection sqlConnection = new SqlConnection(Conn.Sqlconnection);
+                //sqlConnection.Open();
+                //SqlCommand cmd = new SqlCommand();
+                //cmd.Connection = sqlConnection;
+                //cmd.CommandText = sqlquery;
+                //int result = cmd.ExecuteNonQuery();
+                //sqlConnection.Close();
+                //return result;
+
+
+
+            
 
         }
     }

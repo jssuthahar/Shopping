@@ -1,11 +1,62 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Processing/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Processing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Processing.dll": {}
+        }
+      },
+      "Processing.BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Processing.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Processing.BL.dll": {}
+        }
+      },
+      "Processing.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Processing.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Processing.Model.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Processing/1.0.0": {
+      "type": "project",
+      "path": "../Processing/Processing.csproj",
+      "msbuildProject": "../Processing/Processing.csproj"
+    },
+    "Processing.BL/1.0.0": {
+      "type": "project",
+      "path": "../Processing.BL/Processing.BL.csproj",
+      "msbuildProject": "../Processing.BL/Processing.BL.csproj"
+    },
+    "Processing.Model/1.0.0": {
+      "type": "project",
+      "path": "../Processing.Model/Processing.Model.csproj",
+      "msbuildProject": "../Processing.Model/Processing.Model.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Processing >= 1.0.0",
+      "Processing.BL >= 1.0.0",
+      "Processing.Model >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\welcome\\.nuget\\packages\\": {}
@@ -33,7 +84,17 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.BL\\Processing.BL.csproj": {
+              "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.BL\\Processing.BL.csproj"
+            },
+            "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.Model\\Processing.Model.csproj": {
+              "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.Model\\Processing.Model.csproj"
+            },
+            "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing\\Processing.csproj": {
+              "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing\\Processing.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -64,5 +125,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project Processing is not compatible with net7.0 (.NETCoreApp,Version=v7.0). Project Processing supports: net7.0-windows7.0 (.NETCoreApp,Version=v7.0)",
+      "libraryId": "Processing",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

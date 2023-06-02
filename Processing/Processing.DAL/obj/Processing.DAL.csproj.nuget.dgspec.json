@@ -4,14 +4,14 @@
     "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.DAL\\Processing.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.DAL\\Processing.DAL.csproj": {
+    "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.BL\\Processing.BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.DAL\\Processing.DAL.csproj",
-        "projectName": "Processing.DAL",
-        "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.DAL\\Processing.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.BL\\Processing.BL.csproj",
+        "projectName": "Processing.BL",
+        "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.BL\\Processing.BL.csproj",
         "packagesPath": "C:\\Users\\welcome\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.DAL\\obj\\",
+        "outputPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.BL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\welcome\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,6 +53,194 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.DAL\\Processing.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.DAL\\Processing.DAL.csproj",
+        "projectName": "Processing.DAL",
+        "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.DAL\\Processing.DAL.csproj",
+        "packagesPath": "C:\\Users\\welcome\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\welcome\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.BL\\Processing.BL.csproj": {
+                "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.BL\\Processing.BL.csproj"
+              },
+              "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.Model\\Processing.Model.csproj": {
+                "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.Model\\Processing.Model.csproj"
+              },
+              "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing\\Processing.csproj": {
+                "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing\\Processing.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.Model\\Processing.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.Model\\Processing.Model.csproj",
+        "projectName": "Processing.Model",
+        "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.Model\\Processing.Model.csproj",
+        "packagesPath": "C:\\Users\\welcome\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\welcome\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing\\Processing.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing\\Processing.csproj",
+        "projectName": "Processing",
+        "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing\\Processing.csproj",
+        "packagesPath": "C:\\Users\\welcome\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\welcome\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
+            "projectReferences": {
+              "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.Model\\Processing.Model.csproj": {
+                "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.Model\\Processing.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
