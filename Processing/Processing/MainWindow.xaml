@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Processing"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="MainWindow" Height="450" Width="800" Background="Orange">
+    <StackPanel>
+        <TextBlock Text="ORDER PROCESSING" HorizontalAlignment="Center" FontSize="20" Margin="0,20,0,0" FontWeight="Bold"></TextBlock>
+        <StackPanel Margin="0,40,0,0">
+            <ListView Width="520">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="NO"></GridViewColumn>
+                        <GridViewColumn Width="100" Header="ORDER ID"></GridViewColumn>
+                        <GridViewColumn Width="100" Header="ITEM NAME"></GridViewColumn>
+                        <GridViewColumn Width="100" Header="UNIT PRICE"></GridViewColumn>
+                        <GridViewColumn Width="100" Header="QUANTATY"></GridViewColumn>
+                        <GridViewColumn Width="100" Header="TOTAL PRICE"></GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+           
+        </StackPanel>
+    </StackPanel>
 </Window>
