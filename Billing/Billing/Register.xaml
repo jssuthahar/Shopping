@@ -1,0 +1,51 @@
+﻿<Window x:Class="Billing.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Billing"
+        mc:Ignorable="d"
+        Title="Register" Height="500" Width="300" WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown" MouseDoubleClick="Window_MouseDoubleClick"
+        ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+    <Border CornerRadius="20"  Grid.Row="0"  BorderThickness="3" BorderBrush="Orange">
+        <Border.Background>
+            <SolidColorBrush Color="Gray"/>
+        </Border.Background>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0">
+                <StackPanel>
+                    <Image Source="https://www.linkpicture.com/q/Logo-2_4.png" Width="40" Height="50" Margin="0,3,0,0"/>
+                    <Label Content="Sign Up Now" FontWeight="Bold"  Margin="0,3,0,0" HorizontalAlignment="Center" FontFamily="helvetica" FontSize="13" Opacity="0.8"/>
+                    <Label Content="Please fill the details and create an account" HorizontalAlignment="Center" FontSize="10" Margin="0,3,0,0"/>
+                    <Label Content="Full Name"  FontSize="16" Margin="45,0,0,-20"/>
+                    <TextBox x:Name="txtbox_name"  FontSize="16" Height="30" Width="200" Margin="0,12,0,0" TextAlignment="Left" />
+                    <Label Content="Email"  FontSize="16" Margin="45,0,0,-20"/>
+                    <TextBox x:Name="txtbox_email"  FontSize="16" Height="30" Width="200" Margin="0,12,0,0" TextAlignment="Left" />
+                    <Label Content="Password"  FontSize="16" Margin="45,0,0,-20"/>
+                    <PasswordBox x:Name="passwordBox"  FontSize="16" Height="30" Width="200" Margin="0,12,0,0" />
+                    <TextBox x:Name="passwordTxtBox"  FontSize="16" Height="30" Width="200" Margin="0,-30,0,0" Text="Password"  Visibility="Collapsed" />
+                    <Label Content="Phone Number" FontSize="16" Margin="45,0,0,-20"/>
+                    <TextBox x:Name="txtbox_phnum"  FontSize="16" Height="30" Width="200" Margin="0,12,0,0" TextAlignment="Left" />
+                    <CheckBox x:Name="chkbox_password" Checked="chkbox_password_Checked" Unchecked="chkbox_password_Unchecked" Content="Show Password"  Margin="47,8,0,0"/>
+                    <Button x:Name="btn_signup" Content="Sign Up" HorizontalAlignment="Center" Background="Orange" Width="250" Height="30"  Margin="0,10,0,0" Foreground="White" Click="btn_signup_Click">
+                        
+                    </Button>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Already have an account?"   Margin="55,0,5,0"/>
+                        <Button x:Name="btn_login" Content="Log In" Background="Gray" Foreground="Orange" Click="btn_login_Click" BorderBrush="Transparent"/>
+                    </StackPanel>
+                    <Label Content="Or connect with" HorizontalAlignment="Center"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Image Source="https://cdn-icons-png.flaticon.com/512/145/145802.png" Width="35" Margin="0,5,10,0"/>
+                        <Image Source="https://cdn-icons-png.flaticon.com/512/145/145807.png" Width="35" Margin="0,5,10,0"/>
+                        <Image Source="https://cdn-icons-png.flaticon.com/512/145/145804.png" Width="35" Margin="0,5,10,0"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

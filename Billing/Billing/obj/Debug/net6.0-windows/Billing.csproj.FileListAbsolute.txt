@@ -4,11 +4,9 @@ C:\Users\nathe\source\repos\Shopping\Billing\Billing\bin\Debug\net6.0-windows\Bi
 C:\Users\nathe\source\repos\Shopping\Billing\Billing\bin\Debug\net6.0-windows\Billing.dll
 C:\Users\nathe\source\repos\Shopping\Billing\Billing\bin\Debug\net6.0-windows\Billing.pdb
 C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\Billing.csproj.AssemblyReference.cache
-C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\Billing_MarkupCompile.cache
 C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\Billing_MarkupCompile.lref
-C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\Billing.g.resources
 C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\Billing.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\Billing.AssemblyInfoInputs.cache
@@ -19,3 +17,14 @@ C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\re
 C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\Billing.pdb
 C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\Billing.genruntimeconfig.cache
 C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\ref\Billing.dll
+C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\Login.g.cs
+C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\Login.baml
+C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\Register.g.cs
+C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\Register.baml
+C:\Users\nathe\source\repos\Shopping\Billing\Billing\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\nathe\source\repos\Shopping\Billing\Billing\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\nathe\source\repos\Shopping\Billing\Billing\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\nathe\source\repos\Shopping\Billing\Billing\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\nathe\source\repos\Shopping\Billing\Billing\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\nathe\source\repos\Shopping\Billing\Billing\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\nathe\source\repos\Shopping\Billing\Billing\obj\Debug\net6.0-windows\Billing.csproj.CopyComplete
