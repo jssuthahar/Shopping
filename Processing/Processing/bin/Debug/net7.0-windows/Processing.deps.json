@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "Processing/1.0.0": {
+        "dependencies": {
+          "Processing.Model": "1.0.0"
+        },
         "runtime": {
           "Processing.dll": {}
+        }
+      },
+      "Processing.Model/1.0.0": {
+        "runtime": {
+          "Processing.Model.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Processing/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Processing.Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

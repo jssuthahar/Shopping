@@ -19,3 +19,6 @@ C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processin
 C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\obj\Debug\net7.0-windows\Processing.pdb
 C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\obj\Debug\net7.0-windows\Processing.genruntimeconfig.cache
 C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\obj\Debug\net7.0-windows\ref\Processing.dll
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\bin\Debug\net7.0-windows\Processing.Model.dll
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\bin\Debug\net7.0-windows\Processing.Model.pdb
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\obj\Debug\net7.0-windows\Processing.csproj.CopyComplete

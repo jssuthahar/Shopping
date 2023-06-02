@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0-windows7.0": {}
+    "net7.0-windows7.0": {
+      "Processing.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Processing.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Processing.Model.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Processing.Model/1.0.0": {
+      "type": "project",
+      "path": "../Processing.Model/Processing.Model.csproj",
+      "msbuildProject": "../Processing.Model/Processing.Model.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0-windows7.0": []
+    "net7.0-windows7.0": [
+      "Processing.Model >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\welcome\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.Model\\Processing.Model.csproj": {
+              "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.Model\\Processing.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

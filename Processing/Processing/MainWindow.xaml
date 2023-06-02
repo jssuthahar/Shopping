@@ -8,20 +8,20 @@
         Title="MainWindow" Height="450" Width="800" Background="Orange">
     <StackPanel>
         <TextBlock Text="ORDER PROCESSING" HorizontalAlignment="Center" FontSize="20" Margin="0,20,0,0" FontWeight="Bold"></TextBlock>
-        <StackPanel Margin="0,40,0,0">
-            <ListView Width="520">
+        <StackPanel Margin="0,80,0,0">
+            <ListView Width="600" x:Name="lstname">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Header="NO"></GridViewColumn>
-                        <GridViewColumn Width="100" Header="ORDER ID"></GridViewColumn>
-                        <GridViewColumn Width="100" Header="ITEM NAME"></GridViewColumn>
-                        <GridViewColumn Width="100" Header="UNIT PRICE"></GridViewColumn>
-                        <GridViewColumn Width="100" Header="QUANTATY"></GridViewColumn>
-                        <GridViewColumn Width="100" Header="TOTAL PRICE"></GridViewColumn>
+                        <GridViewColumn Width="100" Header="NO" DisplayMemberBinding="{Binding Number}"></GridViewColumn>
+                        <GridViewColumn Width="100" Header="ORDER ID" DisplayMemberBinding="{Binding OrderID}"></GridViewColumn>
+                        <GridViewColumn Width="100" Header="ITEM NAME" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                        <GridViewColumn Width="100" Header="UNIT PRICE" DisplayMemberBinding="{Binding Unit}"></GridViewColumn>
+                        <GridViewColumn Width="100" Header="QUANTATY" DisplayMemberBinding="{Binding Quantaty}"></GridViewColumn>
+                        <GridViewColumn Width="100" Header="TOTAL PRICE" DisplayMemberBinding="{Binding Total}"></GridViewColumn>
                     </GridView>
                 </ListView.View>
             </ListView>
-           
         </StackPanel>
+        <Button Content="PROCESS" Width="100" FontSize="18" Margin="0,200,0,0" Click="Button_Click"></Button>
     </StackPanel>
 </Window>

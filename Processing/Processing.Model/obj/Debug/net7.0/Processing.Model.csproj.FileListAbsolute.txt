@@ -1,0 +1,12 @@
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.Model\bin\Debug\net7.0\Processing.Model.deps.json
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.Model\bin\Debug\net7.0\Processing.Model.dll
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.Model\bin\Debug\net7.0\Processing.Model.pdb
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.Model\obj\Debug\net7.0\Processing.Model.csproj.AssemblyReference.cache
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.Model\obj\Debug\net7.0\Processing.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.Model\obj\Debug\net7.0\Processing.Model.AssemblyInfoInputs.cache
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.Model\obj\Debug\net7.0\Processing.Model.AssemblyInfo.cs
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.Model\obj\Debug\net7.0\Processing.Model.csproj.CoreCompileInputs.cache
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.Model\obj\Debug\net7.0\Processing.Model.dll
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.Model\obj\Debug\net7.0\refint\Processing.Model.dll
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.Model\obj\Debug\net7.0\Processing.Model.pdb
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.Model\obj\Debug\net7.0\ref\Processing.Model.dll
