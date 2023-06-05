@@ -5,24 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Billing"
         mc:Ignorable="d"
-        Title="Cart" Height="600" Width="950" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
-    <Window.Resources>
-        <!--<Style TargetType="TextBlock">
-            <Setter Property="FontSize" Value="14"></Setter>
-            <Setter Property="FontWeight" Value="Medium"></Setter>
-            <Setter Property="FontFamily" Value="file:///d:/MyFonts/#Pericles LightSetter"></Setter>
-        </Style>-->
-    </Window.Resources>
+        Title="Cart" Height="600" Width="1150" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
             <ColumnDefinition ></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid Height="550" Width="600" Margin="0,50,0,0" >
+        <Grid Height="550" Width="800" Margin="0,50,0,0" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
@@ -41,11 +34,11 @@
             </StackPanel>
             <Rectangle Grid.Row="1" Height="5" Margin="0,10,0,0"  >
                 <Rectangle.Fill>
-                    <SolidColorBrush Color="#eeeeee"></SolidColorBrush>
+                    <SolidColorBrush Color="Orange"></SolidColorBrush>
                 </Rectangle.Fill>
             </Rectangle>
             
-            <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" Style="{StaticResource datagrid}"  Width="600" Height="450" Grid.Row="2"  Margin="0,10,0,0" x:Name="datagrid" BorderThickness="0" >
+            <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" Style="{StaticResource datagrid}"  Width="800" Height="450" Grid.Row="2"  Margin="0,10,0,0" x:Name="datagrid" BorderThickness="0" >
                 <DataGrid.RowStyle>
                     <Style TargetType="DataGridRow">
                         <Setter Property="Height" Value="70"></Setter>
@@ -60,6 +53,7 @@
                         <Setter Property="FontFamily" Value="file:///d:/MyFonts/#Pericles LightSetter"></Setter>
                         <Setter Property="Foreground" Value="Gray"></Setter>
                         <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
                     </Style>
                 </DataGrid.Resources>
                 <DataGrid.Columns   >
@@ -73,38 +67,38 @@
                                         </Rectangle.Fill>
                                     </Rectangle>
                                     <StackPanel Margin="20,0,0,0">
-                                        <TextBlock Text="{Binding Des}" Style="{StaticResource gridtext}" ></TextBlock>
-                                        <TextBlock Text="{Binding Name}" Margin="5" Style="{StaticResource gridname}" ></TextBlock>
+                                        <TextBlock Text="{Binding productDescription}"  FontSize="8" Style="{StaticResource gridtext}" ></TextBlock>
+                                        <TextBlock Text="{Binding productName}" FontSize="10" Style="{StaticResource gridname}" ></TextBlock>
                                     </StackPanel>
                                 </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-                    <DataGridTemplateColumn Header="QUANTITY" Width="2*"  >
+                    <DataGridTemplateColumn Header="QUANTITY" Width="*"  >
                         <DataGridTemplateColumn.CellTemplate  >
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal"   >
-                                    <Button x:Name="btnsub" Content="-" Height="20" Width="15" Background="Transparent" BorderThickness="0"></Button>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center"  >
+                                    <Button x:Name="btnsub" Content="-" Click="btnsub_Click" Height="20" Width="15" Background="Transparent" BorderThickness="0"></Button>
                                     <TextBox x:Name="txtQuantity" Text="{Binding Quantity}" Height="20" Width="20" VerticalContentAlignment="Bottom" Margin="5,0,5,0" IsReadOnly="True" Style="{StaticResource MiniheadBox}"></TextBox>
-                                    <Button x:Name="btnadd" Content="+" Height="20" Width="15" Background="Transparent" BorderThickness="0"></Button>
+                                    <Button x:Name="btnadd" Content="+" Click="btnadd_Click" Height="20" Width="15" Background="Transparent" BorderThickness="0"></Button>
                                 </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-                    <DataGridTemplateColumn Header="PRICE" Width="2*"    >
+                    <DataGridTemplateColumn Header="PRICE" Width="*" >
                         <DataGridTemplateColumn.CellTemplate >
-                            <DataTemplate>
-                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center"   >
+                            <DataTemplate >
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center"    >
                                     <TextBlock Text="{Binding price}" ></TextBlock>
                                 </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
-                    <DataGridTemplateColumn Header="TOTAL" Width="2*"   >
+                    <DataGridTemplateColumn Header="TOTAL" Width="*"    >
                         <DataGridTemplateColumn.CellTemplate >
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center"   >
-                                    <TextBlock Text="{Binding total}" ></TextBlock>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center"   >
+                                    <TextBlock Text="{Binding Totalprice}"  ></TextBlock>
                                 </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
@@ -112,8 +106,8 @@
                     <DataGridTemplateColumn  Width="*" >
                         <DataGridTemplateColumn.CellTemplate >
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center"   >
-                                    <Button Background="Transparent" BorderThickness="0" >
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center"   >
+                                    <Button Background="Transparent" BorderThickness="0" Click="Button_Click_1" >
                                         <Image Source="/Images/delete.png" Width="20" Height="20"></Image>
                                     </Button>
                                 </StackPanel>
@@ -123,7 +117,7 @@
 
                 </DataGrid.Columns>
             </DataGrid>
-            <Button Grid.Row="3" Background="Transparent" BorderThickness="0" Margin="0,20,0,0" HorizontalAlignment="Left">
+            <Button Grid.Row="3" Background="Transparent" BorderThickness="0" Margin="0,20,0,0" HorizontalAlignment="Left" Click="Button_Click">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="\Images\left.png" Width="20" Height="20" ></Image>
                     <TextBlock Text="CONTINUE SHOPPING" Margin="10,0,0,0" Style="{StaticResource Minihead}" VerticalAlignment="Center" Foreground="Orange" ></TextBlock>
@@ -151,11 +145,11 @@
                 </StackPanel>
                 <Rectangle Grid.Row="1" Height="5" Margin="0,10,0,0"  >
                     <Rectangle.Fill>
-                        <SolidColorBrush Color="#eeeeee"></SolidColorBrush>
+                        <SolidColorBrush Color="Orange"></SolidColorBrush>
                     </Rectangle.Fill>
                 </Rectangle>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="2" Margin="0,10,0,0" >
-                   <TextBlock Text="ITEMS" Style="{StaticResource Minihead}"></TextBlock>
+                   <TextBlock Text="ITEMS" Style="{StaticResource Minihead}" ></TextBlock>
                     <TextBox Text="" Margin="0,0,5,0" x:Name="txtorderitems"  Style="{StaticResource MiniheadBox}" ></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="2" Margin="0,10,0,0">
@@ -169,11 +163,13 @@
                 <StackPanel Grid.Row="4" Margin="0,30,0,0">
                     <TextBlock Text="PROMO CODE" Style="{StaticResource Minihead}"></TextBlock>
                     <TextBox Text="" x:Name="txtpromocode" Background="White" Height="30" VerticalContentAlignment="Center" Padding="5" Margin="0,10,0,0" Style="{StaticResource MiniheadBox}"></TextBox>
+                    <TextBlock Text="*CODE APPLIED" x:Name="promovalid" Foreground="Green" FontSize="10" Style="{StaticResource Minihead}" Margin="0,5,0,0" Visibility="Hidden" ></TextBlock>
+                    <TextBlock Text="* INVALID CODE" x:Name="promoinvalid" Foreground="Red" FontSize="10" Style="{StaticResource Minihead}" Margin="0,-13,0,0" Visibility="Hidden" ></TextBlock>
                 </StackPanel>
-                <Button x:Name="btnPromo" Content="Apply" Grid.Row="5" Margin="0,15,0,0" Width="80" Height="25" HorizontalAlignment="Left" Style="{StaticResource btnapply}"></Button>
+                <Button x:Name="btnPromo" Content="Apply" Grid.Row="5" Margin="0,10,0,0" Width="80" Height="25" HorizontalAlignment="Left" Style="{StaticResource btnapply}" Click="btnPromo_Click"></Button>
                 <Rectangle Grid.Row="6" Height="5" Margin="0,30,0,0"  >
                     <Rectangle.Fill>
-                        <SolidColorBrush Color="#eeeeee"></SolidColorBrush>
+                        <SolidColorBrush Color="Orange"></SolidColorBrush>
                     </Rectangle.Fill>
                 </Rectangle>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="7" Margin="0,20,0,0" >
@@ -183,7 +179,7 @@
                     <TextBlock Text="Rs." Margin="0,0,0,0" Style="{StaticResource Minihead}"></TextBlock>
                     <TextBox Text="" x:Name="txttotalcost" Style="{StaticResource MiniheadBox}"></TextBox>
                 </StackPanel>
-                <Button x:Name="btncheckout" Content="Checkout" Grid.Row="8" Margin="0,30,0,0" Height="35" Style="{StaticResource btncheckout}"></Button>
+                <Button x:Name="btncheckout" Content="Checkout" Grid.Row="8" Margin="0,30,0,0" Height="35" Style="{StaticResource btncheckout}" Click="btncheckout_Click"></Button>
             </Grid>
         </Grid>
       

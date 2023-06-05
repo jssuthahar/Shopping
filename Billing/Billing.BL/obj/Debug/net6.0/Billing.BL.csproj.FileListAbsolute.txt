@@ -1,0 +1,17 @@
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\bin\Debug\net6.0\Billing.BL.deps.json
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\bin\Debug\net6.0\Billing.BL.dll
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\bin\Debug\net6.0\Billing.BL.pdb
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\obj\Debug\net6.0\Billing.BL.csproj.AssemblyReference.cache
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\obj\Debug\net6.0\Billing.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\obj\Debug\net6.0\Billing.BL.AssemblyInfoInputs.cache
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\obj\Debug\net6.0\Billing.BL.AssemblyInfo.cs
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\obj\Debug\net6.0\Billing.BL.csproj.CoreCompileInputs.cache
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\obj\Debug\net6.0\Billing.BL.dll
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\obj\Debug\net6.0\refint\Billing.BL.dll
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\obj\Debug\net6.0\Billing.BL.pdb
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\obj\Debug\net6.0\ref\Billing.BL.dll
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\bin\Debug\net6.0\Billing.DA.dll
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\bin\Debug\net6.0\Billing.Model.dll
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\bin\Debug\net6.0\Billing.DA.pdb
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\bin\Debug\net6.0\Billing.Model.pdb
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.BL\obj\Debug\net6.0\Billing.BL.csproj.CopyComplete

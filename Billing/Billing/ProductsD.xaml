@@ -1,0 +1,196 @@
+﻿<Window x:Class="Billing.ProductsD"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Billing"
+        mc:Ignorable="d"
+        Title="ProductsD" Height="650" Width="1200" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+      
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="950"></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Height="550" Width="900" Margin="0,50,0,0" >
+                <Grid.Background>
+                    <SolidColorBrush Color="White"></SolidColorBrush>
+                </Grid.Background>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" >
+                    <TextBlock Text="Products" Style="{StaticResource Header}" FontSize="23" Foreground="Orange" ></TextBlock>
+                </StackPanel>
+                <Border Background="Orange" Width="130" Height="35" HorizontalAlignment="Right"  CornerRadius="20" Margin="0,0,40,0">
+                    <StackPanel Orientation="Horizontal" Margin="30,0,0,0"  >
+                    <TextBlock Text="("   Style="{StaticResource Header}" VerticalAlignment="Center" Foreground="White"></TextBlock>
+                    <TextBlock Text=""  x:Name="txtcart" Style="{StaticResource Header}" VerticalAlignment="Center" Foreground="White"></TextBlock>
+                    <TextBlock Text=")"   Style="{StaticResource Header}" VerticalAlignment="Center" Foreground="White"></TextBlock>
+                    <Button Background="Transparent" Click="Button_Click_1" BorderThickness="0" Margin="-20,0,0,0" Width="100" Height="35">
+                        <TextBlock Text="Cart" Style="{StaticResource Header}" FontSize="20" Foreground="White"></TextBlock>
+                    </Button>
+                    </StackPanel>
+                </Border>
+                <Rectangle Grid.Row="1" Height="5" Margin="0,10,0,0"  >
+                    <Rectangle.Fill>
+                        <SolidColorBrush Color="Orange"></SolidColorBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <DataGrid AutoGenerateColumns="False" CanUserAddRows="False" ScrollViewer.VerticalScrollBarVisibility="Visible" Style="{StaticResource datagrid}"  Width="900" Height="450" Grid.Row="2"  Margin="0,10,0,0" x:Name="datagridProduct" BorderThickness="0" >
+                    <DataGrid.RowStyle>
+                        <Style TargetType="DataGridRow">
+                            <Setter Property="Height" Value="70"></Setter>
+                            <Setter Property="Margin" Value="0,20,0,0"></Setter>
+                        </Style>
+                    </DataGrid.RowStyle>
+                    <DataGrid.Resources>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="TextBlock.FontSize" Value="12"></Setter>
+                            <Setter Property="Background" Value="Transparent"></Setter>
+                            <Setter Property="FontWeight" Value="Medium"></Setter>
+                            <Setter Property="FontFamily" Value="file:///d:/MyFonts/#Pericles LightSetter"></Setter>
+                            <Setter Property="Foreground" Value="Gray"></Setter>
+                            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                        </Style>
+                    </DataGrid.Resources>
+                    <DataGrid.Columns   >
+                        <DataGridTemplateColumn Header="PRODUCT DETAILS" Width="8*" >
+                            <DataGridTemplateColumn.CellTemplate   >
+                                <DataTemplate >
+                                    <StackPanel Orientation="Horizontal" >
+                                        <Image  Source="{Binding image}" Height="40" Width="60" />
+                                        <StackPanel Margin="20,0,0,0">
+                                            <TextBlock Text="{Binding productDescription}" FontSize="8" Style="{StaticResource gridtext}" ></TextBlock>
+                                            <TextBlock Text="{Binding productName}"  FontSize="10" Margin="0,5,0,0" Style="{StaticResource gridname}" ></TextBlock>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="Brand : "  FontSize="10" Style="{StaticResource gridname}" ></TextBlock>
+                                                <TextBlock Text="{Binding Brand}"  FontSize="10" Style="{StaticResource gridname}" ></TextBlock>
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="STOCK LEFT" Width="2*"  >
+                            <DataGridTemplateColumn.CellTemplate  >
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center"  >
+                                        <TextBlock Text="{Binding stock}" Style="{StaticResource gridtext}"></TextBlock>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="PRICE" Width="*"   >
+                            <DataGridTemplateColumn.CellTemplate >
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center"  >
+                                        <TextBlock Text="{Binding price}" ></TextBlock>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="COD" Width="2*"   >
+                            <DataGridTemplateColumn.CellTemplate >
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center"  HorizontalAlignment="Center" >
+                                        <TextBlock Text="{Binding Cod}" ></TextBlock>
+
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="WARRANTY" Width="2*"   >
+                            <DataGridTemplateColumn.CellTemplate >
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center"  >
+                                        <TextBlock Text="{Binding warranty}" ></TextBlock>
+                                        <TextBlock Text="Years" ></TextBlock>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn  Width="2*" >
+                            <DataGridTemplateColumn.CellTemplate >
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center"   >
+                                        <Button  BorderThickness="0" Background="Orange"  Content="ADD TO CART" Foreground="White" FontSize="10" Click="Button_Click" Width="70" Height="25"  >
+                                        </Button>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+            <Grid Grid.Column="1" >
+                <Grid.Background>
+                    <SolidColorBrush Color="LightGray" Opacity="0.3"></SolidColorBrush>
+                </Grid.Background>
+                <Grid Height="600" Width="230" Margin="0,50,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Rectangle  Height="5" Margin="0,-40,0,0"  >
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="Orange"></SolidColorBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <StackPanel HorizontalAlignment="Left" Margin="0,100,0,0" >
+                        <TextBlock Text="Search :" Style="{StaticResource Header}" Foreground="DarkBlue" FontSize="23"></TextBlock>
+                            <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                            <TextBox x:Name="txtsearch" Style="{StaticResource HeaderBox}" VerticalContentAlignment="Center" FontSize="14" Width="180" Height="35" Background="White"></TextBox>
+                            <Button x:Name="btnsearch" Background="Transparent" Click="btnsearch_Click" BorderThickness="0">
+                                <Image Source="/Images/Search.png" Width="30" Height="35" Margin="5,0,0,0"></Image>
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Margin="0,30,0,0">
+                        <TextBlock  Text="Sort By : "  Style="{StaticResource Header}"  Foreground="DarkBlue"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Margin="0,20,0,0">
+                        <TextBlock  Text="Price "  Style="{StaticResource Header}"  Foreground="DarkBlue"></TextBlock>
+                        <ComboBox x:Name="comboprice" Width="180" Height="30" HorizontalAlignment="Center" Margin="0,10,40,0" SelectionChanged="comboprice_SelectionChanged">
+                            <ComboBoxItem Content="High to Low"></ComboBoxItem>
+                            <ComboBoxItem Content="Low to High"></ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Margin="0,20,0,0">
+                        <TextBlock  Text="Range Between "  Style="{StaticResource Header}" Foreground="DarkBlue"></TextBlock>
+                        <ComboBox x:Name="comborange" Width="180" Height="30" HorizontalAlignment="Center" Margin="0,10,40,0" SelectionChanged="comborange_SelectionChanged">
+                            <ComboBoxItem Content="Below 500"></ComboBoxItem>
+                            <ComboBoxItem Content="500 to 1000"></ComboBoxItem>
+                            <ComboBoxItem Content="1500 to 2500"></ComboBoxItem>
+                            <ComboBoxItem Content="2500 to 4000"></ComboBoxItem>
+                            <ComboBoxItem Content="Above 4000"></ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                </Grid>
+
+
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

@@ -8,13 +8,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\blueTshirt.jpg" />
     <None Remove="Images\delete.png" />
     <None Remove="Images\left.png" />
+    <None Remove="Images\Search.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Billing.BL\Billing.BL.csproj" />
+    <ProjectReference Include="..\Billing.DA\Billing.DA.csproj" />
+    <ProjectReference Include="..\Billing.Model\Billing.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\blueTshirt.jpg" />
     <Resource Include="Images\delete.png" />
     <Resource Include="Images\left.png" />
+    <Resource Include="Images\Search.png" />
   </ItemGroup>
 
 </Project>
