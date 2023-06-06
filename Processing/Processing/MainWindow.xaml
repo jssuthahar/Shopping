@@ -5,10 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Processing"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="700" Background="Orange">
+        Title="MainWindow" Height="550" Width="700" Background="Orange">
     <StackPanel>
         <TextBlock Text="ORDER PROCESSING" HorizontalAlignment="Center" Foreground="White" FontSize="20" Margin="0,40,0,0" FontWeight="Bold"></TextBlock>
-        <ListView Width="630" Margin="0,80,0,0" x:Name="lstname" FontSize="14" FontWeight="Medium">
+        <ListView Width="630" Margin="0,80,0,0" SelectionChanged="lstname_SelectionChanged" x:Name="lstname" FontSize="14" FontWeight="Medium">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="80" Header="NO" DisplayMemberBinding="{Binding Number}"></GridViewColumn>
+                    <GridViewColumn Width="110" Header="ORDER ID" DisplayMemberBinding="{Binding OrderID}"></GridViewColumn>
+                    <GridViewColumn Width="110" Header="ITEM NAME" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                    <GridViewColumn Width="110" Header="UNIT PRICE" DisplayMemberBinding="{Binding Unit}"></GridViewColumn>
+                    <GridViewColumn Width="110" Header="QUANTATY" DisplayMemberBinding="{Binding Quantaty}"></GridViewColumn>
+                    <GridViewColumn Width="110" Header="TOTAL PRICE" DisplayMemberBinding="{Binding Total}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+       
+        <StackPanel Orientation="Horizontal" Margin="0,-70,0,0" HorizontalAlignment="Center">
+            <Button Content="PLACE ORDER" Click="Button_Click_1"  Width="150" Foreground="White" Background="Gray" FontSize="18" Margin="0,100,0,0"></Button>
+            <Button Content="SHIPPING" Width="150" FontSize="18" Foreground="White" Background="Gray" Margin="20,100,0,0"></Button>
+            <Button Content="DELIVERY" Width="150" FontSize="18" Foreground="White" Background="Gray"  Margin="20,100,0,0"></Button>
+        </StackPanel>
+        <ListView Width="630" Margin="0,30,0,0" Visibility="Hidden" SelectionChanged="lstdata_SelectionChanged"  x:Name="lstdata" FontSize="14" FontWeight="Medium">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="80" Header="NO" DisplayMemberBinding="{Binding Number}"></GridViewColumn>

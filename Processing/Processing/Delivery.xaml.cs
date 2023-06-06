@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Processing.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,21 @@ namespace Processing
     /// </summary>
     public partial class Delivery : Window
     {
+        MainWindow main = new MainWindow();
         public Delivery()
         {
             InitializeComponent();
+            //OrderProcess order =(OrderProcess)lstname.SelectedItem;
+            //MainWindow main = new MainWindow();
+            //main.lstname.SelectedItem = order.Name = txtame.Text;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            OrderProcess order =new OrderProcess();
+            MainWindow main=new MainWindow();
+            main.lstname.SelectedItem = order.Name = txtame.Text;
+            
         }
     }
 }

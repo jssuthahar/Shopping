@@ -32,3 +32,5 @@ C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processin
 C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\bin\Debug\net7.0-windows\Processing.DAL.dll
 C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\bin\Debug\net7.0-windows\Processing.DAL.pdb
 C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\bin\Debug\net7.0-windows\Processing.DAL.dll.config
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\obj\Debug\net7.0-windows\Delivery.g.cs
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing\obj\Debug\net7.0-windows\Delivery.baml

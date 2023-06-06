@@ -6,5 +6,19 @@
         xmlns:local="clr-namespace:Processing"
         mc:Ignorable="d"
         Title="Delivery" Height="450" Width="800" Background="Orange">
-    <StackPanel></StackPanel>
+    <StackPanel>
+        <TextBlock Text="ORDER INFORMATION" HorizontalAlignment="Center" Margin="0,30,0,0" FontWeight="Bold" FontSize="20" Foreground="White"></TextBlock>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="PLACE ORDER" Click="Button_Click" Width="150" FontSize="18" Margin="0,100,0,0"></Button>
+            <Button Content="SHIPPING" Width="150" FontSize="18" Margin="0,100,0,0"></Button>
+            <Button Content="DELIVERY" Width="150" FontSize="18" Margin="0,100,0,0"></Button>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock Text="PLACED ORDER" FontSize="16" HorizontalAlignment="Center" Margin="0,30,0,0"></TextBlock>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="ORDER NAME :" HorizontalAlignment="Center" FontSize="16"></TextBlock>
+                <TextBox Width="150" x:Name="txtame" Margin="10,0,0,0"></TextBox>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
 </Window>
