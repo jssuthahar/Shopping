@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Processing.DAL\Processing.DAL.csproj" />
     <ProjectReference Include="..\Processing.Model\Processing.Model.csproj" />
   </ItemGroup>
 
@@ -21,19 +22,10 @@
       <DependentUpon>Settings1.settings</DependentUpon>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Update="Settings1.Designer.cs">
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings1.settings</DependentUpon>
-      <AutoGen>True</AutoGen>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <None Update="Property\Settings1.settings">
-      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
-      <Generator>SettingsSingleFileGenerator</Generator>
-    </None>
-    <None Update="Settings1.settings">
       <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
       <Generator>SettingsSingleFileGenerator</Generator>
     </None>

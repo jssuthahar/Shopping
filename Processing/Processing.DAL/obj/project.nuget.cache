@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QFYpwJqV+fShj8MTX4gwSwriXLjWoWKzTkTnzGwvQvTUOZYk/SDqj+0u1htRPjQ/NueXTjS72kVY5lDFIrlbXQ==",
-  "success": false,
+  "dgSpecHash": "/YBhn7o+Bo1CPGBpRMIEzxCQFyh9ITsOJNxWWLnMPcOW6lZ5J8PpjOmTOjYEuD9fL5/u+5YovAJSDoylns5sGw==",
+  "success": true,
   "projectFilePath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.DAL\\Processing.DAL.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project Processing is not compatible with net7.0 (.NETCoreApp,Version=v7.0). Project Processing supports: net7.0-windows7.0 (.NETCoreApp,Version=v7.0)",
-      "libraryId": "Processing",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

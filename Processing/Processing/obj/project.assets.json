@@ -147,6 +147,19 @@
           }
         }
       },
+      "Processing.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Processing.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Processing.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Processing.DAL.dll": {}
+        }
+      },
       "Processing.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -473,6 +486,11 @@
         "version.txt"
       ]
     },
+    "Processing.DAL/1.0.0": {
+      "type": "project",
+      "path": "../Processing.DAL/Processing.DAL.csproj",
+      "msbuildProject": "../Processing.DAL/Processing.DAL.csproj"
+    },
     "Processing.Model/1.0.0": {
       "type": "project",
       "path": "../Processing.Model/Processing.Model.csproj",
@@ -481,6 +499,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
+      "Processing.DAL >= 1.0.0",
       "Processing.Model >= 1.0.0",
       "System.Data.SqlClient >= 4.8.5"
     ]
@@ -512,6 +531,9 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
+            "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.DAL\\Processing.DAL.csproj": {
+              "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.DAL\\Processing.DAL.csproj"
+            },
             "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.Model\\Processing.Model.csproj": {
               "projectPath": "C:\\Users\\welcome\\Documents\\GitHub\\desktop-tutorial\\Shopping\\Processing\\Processing.Model\\Processing.Model.csproj"
             }

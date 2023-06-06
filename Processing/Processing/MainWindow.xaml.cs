@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
+using Processing.DAL;
 
 namespace Processing
 {
@@ -25,6 +26,7 @@ namespace Processing
         public MainWindow()
         {
             InitializeComponent();
+            OrderProcess orderProcess = new OrderProcess();
             List<OrderProcess> processs = new List<OrderProcess>()
             {
                 new OrderProcess {Number=1,OrderID=1,Name="BAT",Unit=200,Quantaty=2,Total=500},
@@ -42,7 +44,7 @@ namespace Processing
             SqlConnection sqlConnection = new SqlConnection(Processing.Property.Settings1.Default.Conn);
             sqlConnection.Open();
             string query = "INSERT INTO PROD(NUMBER,ORDERID,ITEMNAME,UNITPRICE,QUANTATY,TOTAL) VALUES(@NUMBER,@ORDERID,@ITEMNAME,@UNITPRICE,@QUANTATY,@TOTAL)";
-            SqlCommand cmd= new SqlCommand(query, sqlConnection);
+            SqlCommand cmd = new SqlCommand(query, sqlConnection);
             cmd.Parameters.AddWithValue("@NUMBER", order.Number);
             cmd.Parameters.AddWithValue("@ORDERID", order.OrderID);
             cmd.Parameters.AddWithValue("@ITEMNAME", order.Name);

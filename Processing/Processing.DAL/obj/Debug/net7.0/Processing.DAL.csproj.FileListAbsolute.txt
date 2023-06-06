@@ -1,0 +1,16 @@
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\obj\Debug\net7.0\Processing.DAL.csproj.AssemblyReference.cache
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\obj\Debug\net7.0\Processing.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\obj\Debug\net7.0\Processing.DAL.AssemblyInfoInputs.cache
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\obj\Debug\net7.0\Processing.DAL.AssemblyInfo.cs
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\obj\Debug\net7.0\Processing.DAL.csproj.CoreCompileInputs.cache
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\bin\Debug\net7.0\Processing.DAL.dll.config
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\bin\Debug\net7.0\Processing.DAL.deps.json
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\bin\Debug\net7.0\Processing.DAL.dll
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\bin\Debug\net7.0\Processing.DAL.pdb
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\bin\Debug\net7.0\Processing.Model.dll
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\bin\Debug\net7.0\Processing.Model.pdb
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\obj\Debug\net7.0\Processing.DAL.csproj.CopyComplete
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\obj\Debug\net7.0\Processing.DAL.dll
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\obj\Debug\net7.0\refint\Processing.DAL.dll
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\obj\Debug\net7.0\Processing.DAL.pdb
+C:\Users\welcome\Documents\GitHub\desktop-tutorial\Shopping\Processing\Processing.DAL\obj\Debug\net7.0\ref\Processing.DAL.dll
