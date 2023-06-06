@@ -10,3 +10,4 @@ C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.Model\obj\Debug\net6
 C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.Model\obj\Debug\net6.0\refint\Billing.Model.dll
 C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.Model\obj\Debug\net6.0\Billing.Model.pdb
 C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.Model\obj\Debug\net6.0\ref\Billing.Model.dll
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.Model\bin\Debug\net6.0\Billing.Model.dll.config

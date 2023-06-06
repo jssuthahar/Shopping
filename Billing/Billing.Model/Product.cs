@@ -29,5 +29,9 @@ namespace Billing.Model
 
         public string productid { get; set; }
         public string Search { get; set; }
+
+        public string Cid { get; set; }
+
+        public string Connection { get; set;}
     }
 }

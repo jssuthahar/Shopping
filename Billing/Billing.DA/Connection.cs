@@ -13,12 +13,13 @@ namespace Billing.DA
     public class Connection
     {
 
+       Product product = new Product();
+        public  string ProQuery { get; set; }
 
-        string ConnectionString = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog = Demo; Data Source = LAPTOP-PJRIF9P6;encrypt = False";
-      public  string ProQuery { get; set; }
+        public string ConnectionString { get; set; }
         public SqlDataAdapter ProductQuery()
         {
-            Product product = new Product();
+
             SqlConnection sqlConnection = new SqlConnection(ConnectionString);
             sqlConnection.Open();
             SqlCommand sqlCommand = new SqlCommand(ProQuery,sqlConnection);

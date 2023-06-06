@@ -30,9 +30,15 @@ namespace Billing
         List<Product> Products = new List<Product>();
         ProDisplay proDisplay = new ProDisplay();
         Product product = new Product();
+        Connection connection = new Connection();
         public ProductsD()
         {
             InitializeComponent();
+          
+            product.Connection = Settings1.Default.Connection;
+            proDisplay.Connection = product.Connection;
+            product.Cid = Settings1.Default.Cid;
+            proDisplay.Cid = Settings1.Default.Cid; 
             datagridProduct.ItemsSource = proDisplay.Display(Query.proQuery);
             datagridProduct.Items.Refresh();
             txtcart.Text = proDisplay.Count().ToString();

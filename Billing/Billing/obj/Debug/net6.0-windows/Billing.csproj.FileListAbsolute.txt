@@ -62,3 +62,6 @@ C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing\bin\Debug\net6.0-win
 C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing\obj\Debug\net6.0-windows\ProductsD.g.cs
 C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing\obj\Debug\net6.0-windows\ProductsD.baml
 C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing\obj\Debug\net6.0-windows\Billing.csproj.CopyComplete
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing\bin\Debug\net6.0-windows\Billing.DA.dll.config
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing\bin\Debug\net6.0-windows\Billing.BL.dll.config
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing\bin\Debug\net6.0-windows\Billing.Model.dll.config

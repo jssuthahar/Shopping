@@ -13,3 +13,5 @@ C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.DA\obj\Debug\net6.0\
 C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.DA\obj\Debug\net6.0\refint\Billing.DA.dll
 C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.DA\obj\Debug\net6.0\Billing.DA.pdb
 C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.DA\obj\Debug\net6.0\ref\Billing.DA.dll
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.DA\bin\Debug\net6.0\Billing.DA.dll.config
+C:\Users\nikilesh\Documents\GitHub\Shopping\Billing\Billing.DA\bin\Debug\net6.0\Billing.Model.dll.config

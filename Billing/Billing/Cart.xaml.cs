@@ -33,6 +33,10 @@ namespace Billing
         public Cart()
         {
             InitializeComponent();
+            product.Connection = Settings1.Default.Connection;
+            proDisplay.Connection = product.Connection;
+            product.Cid = Settings1.Default.Cid;
+            proDisplay.Cid = Settings1.Default.Cid;
             datagrid.ItemsSource = proDisplay.Cart(Query.CartQuery);
             datagrid.Items.Refresh();
             txtitems.Text = datagrid.Items.Count.ToString();

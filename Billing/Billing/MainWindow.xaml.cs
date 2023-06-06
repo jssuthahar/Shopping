@@ -23,6 +23,8 @@ namespace Billing
         public MainWindow()
         {
             InitializeComponent();
+            
+
         }
     }
 }

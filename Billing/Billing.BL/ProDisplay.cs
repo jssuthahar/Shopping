@@ -14,10 +14,15 @@ namespace Billing.BL
     {
         List<Product> lstpro;
         Product product;
+
+        public string Cid;
+        public string Connection;
         public List<Product> Display(string Query)
         {
            Connection connection = new Connection();
            connection.ProQuery = Query;
+
+            connection.ConnectionString = Connection;
             DataSet dataSet = new DataSet();
             connection.ProductQuery().Fill(dataSet);
             if (lstpro == null)
@@ -44,6 +49,7 @@ namespace Billing.BL
         public List<Product> Cart(string Query)
         {
             Connection connection = new Connection();
+            connection.ConnectionString = Connection;
             connection.ProQuery = Query;
             DataSet dataSet = new DataSet();
             connection.ProductQuery().Fill(dataSet);
@@ -72,8 +78,9 @@ namespace Billing.BL
             Decimal total = 0;
             total++;
             Decimal totalprice = Convert.ToDecimal(product.price) * total;
-            String Query = $"Insert into Cart VALUES('101A','{product.productid}','{product.productName}','{product.productDescription}','1',{product.price},{totalprice},'{product.Brand}','{product.image}')";
+            String Query = $"Insert into Cart VALUES('{Cid}','{product.productid}','{product.productName}','{product.productDescription}','1',{product.price},{totalprice},'{product.Brand}','{product.image}')";
             Connection con = new Connection();
+            con.ConnectionString = Connection;
             con.ProQuery = Query;
             int q = con.ProductInsertQuery();
             return q;
@@ -83,22 +90,25 @@ namespace Billing.BL
         {
             String Query = $"SELECT product_id from products WHERE pname = '{product.productName}'";
             Connection con = new Connection();
+            con.ConnectionString = Connection;
             con.ProQuery = Query;
             string q = con.Getid();
             return q;
         }
         public int Updateadd(Product prop)
         {
-            string Query = $"UPDATE Cart SET Quantity = Quantity + 1   WHERE product_id = '{prop.productid}' and Cid = '101A'  ";
+            string Query = $"UPDATE Cart SET Quantity = Quantity + 1   WHERE product_id = '{prop.productid}' and Cid = '{Cid}'  ";
             Connection con = new Connection();
+            con.ConnectionString = Connection;
             con.ProQuery = Query;
             int q = con.updateQuery();
             return q;
         }
         public int Updatesub(Product prop)
         {
-            string Query = $"UPDATE Cart SET Quantity = Quantity - 1 WHERE product_id = '{prop.productid}' and Cid = '101A'  ";
+            string Query = $"UPDATE Cart SET Quantity = Quantity - 1 WHERE product_id = '{prop.productid}' and Cid = '{Cid}'  ";
             Connection con = new Connection();
+            con.ConnectionString = Connection;
             con.ProQuery = Query;
             int q = con.updateQuery();
             return q;
@@ -107,8 +117,9 @@ namespace Billing.BL
         public int Total(Product prop)
         {
             Decimal total = Convert.ToDecimal(prop.price) * Convert.ToInt32(prop.Quantity);
-            string Query = $"UPDATE Cart SET Totalprice ='{total}' WHERE product_id = '{prop.productid}' and Cid = '101A'";
+            string Query = $"UPDATE Cart SET Totalprice ='{total}' WHERE product_id = '{prop.productid}' and Cid = '{Cid}'";
             Connection con = new Connection();
+            con.ConnectionString = Connection;
             con.ProQuery = Query;
             int q = con.updateQuery();
             return q;
@@ -117,22 +128,25 @@ namespace Billing.BL
         {
             string Query = $"SELECT Quantity FROM Cart WHERE product_id = '{product.productid}'";
             Connection con = new Connection();
+            con.ConnectionString = Connection;
             con.ProQuery = Query;
             int q = con.QuantityQuery();
             return q;
         }
         public int RemoveQuery(Product product)
         {
-            string Query = $"DELETE  FROM CART WHERE  product_id = '{product.productid}' and Cid = '101A' ";
+            string Query = $"DELETE  FROM CART WHERE  product_id = '{product.productid}' and Cid = '{Cid}' ";
             Connection con = new Connection();
+            con.ConnectionString = Connection;
             con.ProQuery = Query;
             int q = con.updateQuery();
             return q;
         }
         public int PriceTotaal()
         {
-            string Query = $"SELECT SUM(Totalprice) from Cart WHERE Cid = '101A'";
+            string Query = $"SELECT SUM(Totalprice) from Cart WHERE Cid = '{Cid}'";
             Connection con = new Connection();
+            con.ConnectionString = Connection;
             con.ProQuery = Query;
             int q = con.TotalQuery();
             return q;
@@ -140,8 +154,9 @@ namespace Billing.BL
         }
         public int Count()
         {
-            string Query = $"SELECT Count(*) from Cart WHERE Cid = '101A'";
+            string Query = $"SELECT Count(*) from Cart WHERE Cid = '{Cid}'";
             Connection con = new Connection();
+            con.ConnectionString = Connection;
             con.ProQuery = Query;
             int q = con.TotalQuery();
             return q;
